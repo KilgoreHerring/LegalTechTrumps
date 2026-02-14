@@ -43,7 +43,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 1. Click **+ Add Solution** in the header.
 2. Fill in the basics:
-   - **Name** — The product name (e.g. "Luminance")
+   - **Name** — The product name (e.g. "Legora")
    - **Category** — Pick from 11 legal tech categories (Legal AI, Contract Negotiation, Document Automation, etc.)
    - **Description** — Brief overview of what it does
    - **USP** — Its unique selling point
