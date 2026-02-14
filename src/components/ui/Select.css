@@ -1,0 +1,40 @@
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.select-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.select-field {
+  background: var(--bg-input);
+  border: none;
+  border-bottom: 2px solid var(--bronze);
+  border-radius: 4px 4px 0 0;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--text-primary);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2344403C' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-md) center;
+  padding-right: var(--space-xl);
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.select-field:focus {
+  border-bottom-color: var(--gold);
+  box-shadow: none;
+  outline: none;
+}
+
+.select-field option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}

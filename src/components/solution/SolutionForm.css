@@ -1,0 +1,152 @@
+.solution-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 800px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-section h2 {
+  font-size: 1.15rem;
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+.form-hint {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: flex-end;
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+/* Vendor suggestions dropdown */
+.vendor-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border: var(--card-border);
+  border-radius: 0 0 var(--card-radius) var(--card-radius);
+  box-shadow: var(--card-shadow-hover);
+  z-index: 50;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.vendor-suggestion {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.vendor-suggestion:hover {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.vendor-suggestion-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.vendor-suggestion div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.vendor-suggestion strong {
+  font-size: 0.9rem;
+}
+
+.vendor-suggestion-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Evaluation area checkboxes */
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-sm);
+}
+
+.area-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-input);
+  border: 1px solid transparent;
+  border-radius: var(--card-radius);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.area-checkbox:hover {
+  background: var(--bg-card-hover);
+}
+
+.area-checked {
+  border-color: var(--gold-dim);
+  background: rgba(59, 130, 246, 0.06);
+}
+
+.area-checkbox input[type="checkbox"] {
+  accent-color: var(--gold);
+  width: 16px;
+  height: 16px;
+}
+
+.area-label {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.area-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}

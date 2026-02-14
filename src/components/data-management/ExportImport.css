@@ -1,0 +1,73 @@
+.export-import {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 600px;
+}
+
+.ei-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.ei-section h3 {
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.ei-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.ei-mode {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.ei-mode-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--card-radius);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.ei-mode-active {
+  border-color: var(--gold-dim);
+  color: var(--gold);
+}
+
+.ei-mode-option input {
+  accent-color: var(--gold);
+}
+
+.ei-file-input {
+  display: none;
+}
+
+.ei-result {
+  padding: var(--space-md);
+  border-radius: var(--card-radius);
+  font-size: 0.85rem;
+}
+
+.ei-result-success {
+  background: rgba(80, 200, 120, 0.1);
+  border: 1px solid rgba(80, 200, 120, 0.3);
+  color: var(--success);
+}
+
+.ei-result-error {
+  background: rgba(200, 69, 69, 0.1);
+  border: 1px solid rgba(200, 69, 69, 0.3);
+}
+
+.ei-error {
+  color: var(--danger);
+}

@@ -1,0 +1,33 @@
+.comparison-selector {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-lg);
+  justify-content: center;
+}
+
+.comparison-selector .select-group {
+  flex: 1;
+  max-width: 300px;
+}
+
+.comparison-vs {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  padding-bottom: var(--space-sm);
+}
+
+@media (max-width: 600px) {
+  .comparison-selector {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .comparison-selector .select-group {
+    max-width: none;
+  }
+  .comparison-vs {
+    text-align: center;
+    padding: 0;
+  }
+}
